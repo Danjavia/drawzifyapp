@@ -1,8 +1,8 @@
-var myapp = angular.module( 'myapp', [ 'firebase' ]);
+var myapp = angular.module( 'myapp', [ 'firebase' ] );
 
 myapp.controller( 'BookCtrl', [ '$scope', 'angularFire',  
   	function BookCtrl( $scope, angularFire ) {
-			var url = 'https://<yourID>.firebaseio.com/';
+			var url = 'https://drawzifyapp.firebaseio.com/';
 			var promise = angularFire( url, $scope, 'books', [] );
 			$scope.newBook = {};
 		
@@ -12,10 +12,10 @@ myapp.controller( 'BookCtrl', [ '$scope', 'angularFire',
   	}
 ]);
 
-function startWatch($scope) {  
+function startWatch( $scope ) {  
  	$scope.add = function() {
-		console.log($scope.newBook);
-		$scope.books.push($scope.newBook);
+		console.log( $scope.newBook );
+		$scope.books.push( $scope.newBook );
 		$scope.newBook = '';
  	}
 }
