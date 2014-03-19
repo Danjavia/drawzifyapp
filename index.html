@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html ng-app="myapp">
+  <head>
+    	<title>Drawzify</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body ng-controller="BookCtrl">
+    <h1>angularFire test</h1>
+    <ul>
+      	<li ng-repeat="book in books">{{ book.author }}: {{ book.title }}</li>
+    </ul>
+    <form>
+      	<input type="text" ng-model="newBook.author" placeholder="Author" autofocus/>
+      	<input type="text" ng-model="newBook.title" placeholder="Title" />
+      	<button ng-click="add()">Add</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/0.2.0/angularfire.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
