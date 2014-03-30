@@ -5,6 +5,7 @@
 	<title>My AngularJS App</title>
 	<link rel="stylesheet" href="assets/css/app.css"/>
 	<link rel="stylesheet" href="assets/css/elements.css"/>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<!--[if gte IE 9]>
 	  	<style type="text/css">
 	  	  	.gradient {
@@ -12,6 +13,7 @@
 	  	  	}
 	  	</style>
 	<![endif]-->
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body ng-cloak>
 
@@ -25,6 +27,7 @@
 	<div ng-view></div>
 
 	<div class="ui">
+		<h3>Buttons</h3>
 		<!-- button section -->
 		<a href="" class="btn btn-primary">Button</a>
 		<a href="" class="btn btn-fire">Button</a>
@@ -33,14 +36,14 @@
 		<a href="" class="btn btn-sun">Button</a>
 		<a href="" class="btn btn-danger">Button</a>
 		<a href="" class="btn btn-mini btn-danger">Button</a>
-		<a href="" class="btn btn-big btn-danger">Button</a>
-		<a href="" class="btn btn-block btn-danger">Button</a>
-
+		<a href="" class="btn btn-block btn-aqua">Button</a>
+		
 		<div class="panels">
+			<h3>Panels</h3>
 			<!-- Black panel -->
 			<div class="panel-item">
 				<!-- Panel section -->
-				<div class="panel panel-black">
+				<div class="panel panel-dark">
 					<div class="p-title">
 						<h3>Content title</h3>
 					</div>
@@ -91,6 +94,22 @@
 		</div>
 	</div>
 
+	<div class="notifications">
+		<h3>Notifications</h3>
+		<span class="notify light-circular-gradient rounded">
+			Global message
+		</span>
+		<span class="notify dark-circular-gradient rounded">
+			Status <a href="">message</a>
+		</span>
+		<span class="notify blue-circular-gradient rounded">
+			Info <a href="">message.</a>
+		</span>
+		<span class="notify red-circular-gradient rounded">
+			Alert <a href="">message.</a>
+		</span>
+	</div>
+	<div class="clearfix"></div>
 	<div>AngularFire-seed v<span app-version></span></div>
 
 	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
